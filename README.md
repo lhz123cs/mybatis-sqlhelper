@@ -1,50 +1,22 @@
 # MyBatis 多租户、逻辑删除、数据权限插件、多数据源-SqlHelper(持续维护，放心使用)
 
-[![Maven central](https://maven-badges.herokuapp.com/maven-central/io.github.heykb/mybatis-sqlHelper/badge.svg)](https://maven-badges.herokuapp.com/maven-central/io.github.heykb/mybatis-sqlHelper)
+[![Maven central](https://maven-badges.herokuapp.com/maven-central/io.github.heykb/mybatis-sqlhelper-spring-boot-starter/badge.svg)](https://maven-badges.herokuapp.com/maven-central/io.github.heykb/mybatis-sqlHelper)
 
 如果您正在使用MyBatis，并且您的项目需要<b>多租户、逻辑删除和数据权限、多数据源</b>的功能建议您使用，这一定是<b>最方便的</b>方式，使用它对您的现有代码没有侵入，您不需要对现有代码进行任何修改。
 
-~~~xml
-    <dependency>
-        <groupId>io.github.heykb</groupId>
-        <artifactId>mybatis-sqlhelper-spring-boot-starter</artifactId>
-        <version>${project.version}</version>
-    </dependency>
-~~~
-## 使用快照版本(及时bug修复版本)
-~~~xml
-<dependency>
-    <groupId>io.github.heykb</groupId>
-    <artifactId>mybatis-sqlhelper-spring-boot-starter</artifactId>
-    <version>3.0.0.SR2-SNAPSHOT</version>
-</dependency>
 
-<repositories>
-        <repository>    
-            <id>sonatype-nexus-snapshots</id>
-            <name>Sonatype Nexus Snapshots</name>
-            <url>https://s01.oss.sonatype.org/content/repositories/snapshots/</url>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-            <releases>
-                <enabled>false</enabled>
-            </releases>
-        </repository>
-    </repositories>
-~~~
 ## 特点
 * 可实现多租户
 * 可实现真实删除转逻辑删除
 * 可实现行级别和列级别权限控制（自动解析注入）
 * 简单方便开箱即用的多数据源管理和切换
 * 可插拔
-* 简单方便
+* 简单方便,无压力
 * 高效率（基于[阿里 druid sql解析器](https://github.com/alibaba/druid/wiki/SQL-Parser)）
 * 将多租户、逻辑删除与应用程序解耦，随配随用
 * 强大的字段自动注入能力（<i>查询条件注入/插入语句注入/更新语句注入/查询列过滤</i>），定制其他业务逻辑
 * 支持多种数据库（基于阿里 druid sql解析器）
-* 超简单即可拥有多数据管理和切换
+
 
 ## spring 集成
 1. [MyBatis SqlHelper Spring](./mybatis-sqlhelper-spring/README.md)
